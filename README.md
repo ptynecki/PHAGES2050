@@ -19,7 +19,11 @@ Our project is about developing a framework for microbiologists and bioinformati
 
 ## Have a question?
 
+Obviously if you have a private question or want to cooperate with us, you can always reach out to us directly via our [Phage Directory Slack](https://phage.directory/slack) (channel **#PHAGES2050**).
+
 ## Found a bug?
+
+Feel free to add a new issue with a respective title and description on the [the PHAGES2050 repository](https://github.com/ptynecki/PHAGES2050/issues). If you already found a solution to your problem, we would be happy to review your pull request.
 
 ## Team
 
