@@ -24,7 +24,7 @@ Our project is about developing a framework for microbiologists and bioinformati
 ## Team
 
 #### Data Science crew
-![](http://tynecki.pl/phages2050-datascience-team.png)
+![](http://tynecki.pl/phages2050-datascience-team-v2.png)
 
 #### Phage domain expert crew
-![](http://tynecki.pl/phages2050-phage-expert-team.png)
+![](http://tynecki.pl/phages2050-phage-expert-team-v2.png)
