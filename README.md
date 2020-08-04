@@ -14,6 +14,8 @@ Our project is about developing a AI-based framework for microbiologists and bio
 
 ## Expected Results
 
+## Documentation
+
 ## Requirements
 
 ## Community and Contributions
