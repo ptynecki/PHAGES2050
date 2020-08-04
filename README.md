@@ -36,6 +36,9 @@ Feel free to add a new issue with a respective title and description on the [the
 #### Phage domain expert crew
 ![](http://tynecki.pl/phages2050-phage-expert-team-v2.png)
 
+
+## Code of Conduct
+
 ## License
 
 The PHAGES2050 package and pretrained models are released under the under terms of [the MIT License](https://github.com/ptynecki/PHAGES2050/blob/master/LICENSE).
