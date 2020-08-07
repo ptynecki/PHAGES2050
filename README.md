@@ -6,6 +6,12 @@ PHAGES2050 is a novel [Python 3.6+ programming language](https://python.org) fra
 
 Our project is about developing a AI-based framework for microbiologists and bioinformaticians who hunt, explore and classify phages. Applying the framework will shorten the duration of computational methods required to match phages with bacteria for specific patient cases. Having such organised framework at hand and freely-available will help develop personalized phage therapy and make it accessible to people worldwide.
 
+[![Build Status](https://travis-ci.org/phages2050-dev/phages2050.svg?branch=master)](https://travis-ci.org/phages2050-dev/phages2050)
+[![Documentation Status](https://readthedocs.org/projects/phages2050/badge/?version=stable)](https://phages2050.readthedocs.io/en/stable/?badge=stable)
+[![PyPI version](https://img.shields.io/pypi/v/phages2050.svg)](https://pypi.org/project/phages2050/)
+[![PyPI license](https://img.shields.io/pypi/l/phages2050.svg)](https://pypi.python.org/pypi/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/phages2050.svg)](https://pypi.python.org/pypi/phages2050/)
+
 ## Table of Contents
 
 ## Models Availability
@@ -16,7 +22,21 @@ Our project is about developing a AI-based framework for microbiologists and bio
 
 ## Documentation
 
-## Requirements
+The official documentation is hosted on ReadTheDocs: https://phages2050.readthedocs.io
+
+## Install
+
+Using pip:
+
+```
+pip install phages2050
+```
+
+Using conda:
+
+```
+conda install -c conda-forge phages2050
+```
 
 ## Community and Contributions
 
