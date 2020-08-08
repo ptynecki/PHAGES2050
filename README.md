@@ -2,6 +2,8 @@
   <img src="http://tynecki.pl/phages2050-logo.png">
 </p>
 
+> "Keep calm, use AI for phages and stop AMR"
+
 PHAGES2050 is a novel [Python 3.6+ programming language](https://python.org) framework to boost bacteriophage research & therapy and infrastructure in order to achieve the full potential to fight against antimicrobial resistant bacteria within **Natural Language Processing (NLP)** and **Deep Learning**.
 
 Our project is about developing a AI-based framework for microbiologists and bioinformaticians who hunt, explore and classify phages. Applying the framework will shorten the duration of computational methods required to match phages with bacteria for specific patient cases. Having such organised framework at hand and freely-available will help develop personalized phage therapy and make it accessible to people worldwide.
@@ -11,6 +13,7 @@ Our project is about developing a AI-based framework for microbiologists and bio
 [![PyPI version](https://img.shields.io/pypi/v/phages2050.svg)](https://pypi.org/project/phages2050/)
 [![PyPI license](https://img.shields.io/pypi/l/phages2050.svg)](https://pypi.python.org/pypi/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/phages2050.svg)](https://pypi.python.org/pypi/phages2050/)
+[![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)	
 
 ## Table of Contents
 
@@ -24,19 +27,21 @@ Our project is about developing a AI-based framework for microbiologists and bio
 
 The official documentation is hosted on ReadTheDocs: https://phages2050.readthedocs.io
 
-## Install
+## Installation
 
-Using pip:
+_PHAGES2050_ can be installed by running `pip install phages2050`. It requires Python 3.6.0+ to run.
 
-```
-pip install phages2050
-```
-
-Using conda:
+You can also use Conda:
 
 ```
 conda install -c conda-forge phages2050
 ```
+
+#### Install from GitHub
+
+If you can't wait for the latest hotness and want to install from GitHub, use:
+
+pip install git+git://github.com/ptynecki/PHAGES2050
 
 ## Community and Contributions
 
@@ -56,6 +61,11 @@ Feel free to add a new issue with a respective title and description on the [the
 #### Phage domain expert crew
 ![](http://tynecki.pl/phages2050-phage-expert-team-v2.png)
 
+## Change log
+
+The log's will become rather long. It moved to its own file.
+
+See [CHANGELOG.md](https://github.com/ptynecki/PHAGES2050/blob/master/CHANGELOG.md).
 
 ## Code of Conduct
 
