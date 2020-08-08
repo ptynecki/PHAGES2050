@@ -8,12 +8,14 @@ PHAGES2050 is a novel [Python 3.6+ programming language](https://python.org) fra
 
 Our project is about developing a AI-based framework for microbiologists and bioinformaticians who hunt, explore and classify phages. Applying the framework will shorten the duration of computational methods required to match phages with bacteria for specific patient cases. Having such organised framework at hand and freely-available will help develop personalized phage therapy and make it accessible to people worldwide.
 
+Watch the [PHAVES #3](https://www.youtube.com/watch?v=gh_Q135t9ps) talk to learn more.
+
 [![Build Status](https://travis-ci.org/phages2050-dev/phages2050.svg?branch=master)](https://travis-ci.org/phages2050-dev/phages2050)
 [![Documentation Status](https://readthedocs.org/projects/phages2050/badge/?version=stable)](https://phages2050.readthedocs.io/en/stable/?badge=stable)
 [![PyPI version](https://img.shields.io/pypi/v/phages2050.svg)](https://pypi.org/project/phages2050/)
 [![PyPI license](https://img.shields.io/pypi/l/phages2050.svg)](https://pypi.python.org/pypi/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/phages2050.svg)](https://pypi.python.org/pypi/phages2050/)
-[![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)	
+[![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ## Table of Contents
 
