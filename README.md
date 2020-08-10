@@ -43,7 +43,7 @@ conda install -c conda-forge phages2050
 
 If you can't wait for the latest hotness and want to install from GitHub, use:
 
-pip install git+git://github.com/ptynecki/PHAGES2050
+`pip install git+git://github.com/ptynecki/PHAGES2050`
 
 ## Community and Contributions
 
