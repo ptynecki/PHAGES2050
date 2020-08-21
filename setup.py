@@ -12,10 +12,11 @@ long_description = (
 with open("requirements.txt") as requirements:
     # Read requirements and process as list of strings
     packages = list(map(str.strip, requirements.readlines()))
+    version = '0.3.0'
 
     setup(
         name="phages2050",
-        version="0.2.0",
+        version=version,
         license="MIT",
         description=long_description,
         long_description=long_description,
@@ -23,7 +24,7 @@ with open("requirements.txt") as requirements:
         author="Piotr Tynecki",
         author_email="p.tynecki@doktoranci.pb.edu.pl",
         url="https://github.com/ptynecki/PHAGES2050",
-        download_url="https://github.com/ptynecki/PHAGES2050/archive/v0.2.0.tar.gz",
+        download_url=f"https://github.com/ptynecki/PHAGES2050/archive/v{version}.tar.gz",
         install_requires=packages,
         keywords=[
             "bacteriophages",
