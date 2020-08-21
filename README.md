@@ -19,7 +19,14 @@ Watch the [PHAVES #3](https://www.youtube.com/watch?v=gh_Q135t9ps) talk to learn
 
 ## Table of Contents
 
-## Models Availability
+[Framework modules](https://github.com/ptynecki/PHAGES2050#framework-modules) | [Usage](https://github.com/ptynecki/PHAGES2050#usage) | [Expected Results](https://github.com/ptynecki/PHAGES2050#expected-results) | [Documentation](https://github.com/ptynecki/PHAGES2050#documentation) | [Installation](https://github.com/ptynecki/PHAGES2050#installation) | [Community and Contributions](https://github.com/ptynecki/PHAGES2050#community-and-contributions) | [Have a question?](https://github.com/ptynecki/PHAGES2050#have-a-question) | [Found a bug?](https://github.com/ptynecki/PHAGES2050#found-a-bug) | [Team](https://github.com/ptynecki/PHAGES2050#team) | [Change log](https://github.com/ptynecki/PHAGES2050#change-log) | [Code of Conduct](https://github.com/ptynecki/PHAGES2050#code-of-conduct) | [License](https://github.com/ptynecki/PHAGES2050#license)
+
+## Framework modules
+
+`crawlers` - set of functions responsible for bacteriophages data scraping from different sources (MillardLab, NCBI)  
+`features` - set of functions responsible for nucleotides and proteins feature extraction for Machine Learning classification and deeper analysis  
+`embeddings` - set of pre-trained Embedding models for nucleotides and proteins vectorization  
+`classifiers` - set of pre-trained Machine Learning models dedicated for bacteriophage research
 
 ## Usage
 
@@ -73,4 +80,4 @@ See [CHANGELOG.md](https://github.com/ptynecki/PHAGES2050/blob/master/CHANGELOG.
 
 ## License
 
-The PHAGES2050 package and pretrained models are released under the under terms of [the MIT License](https://github.com/ptynecki/PHAGES2050/blob/master/LICENSE).
+The PHAGES2050 package and pre-trained models are released under the under terms of [the MIT License](https://github.com/ptynecki/PHAGES2050/blob/master/LICENSE).

@@ -11,20 +11,19 @@ import requests
 
 class MillardLabPhagesCrawler:
     """
-    MillardLab bacteriophages crawler
+    MillardLab bacteriophages tabular data crawler
     
-    This class allows you to create DataFrame
-    or save it as CSV with columns:
+    This class allows you to create DataFrame or save it as CSV with columns:
     - Accession
     - Description
     - Classification
     - Genome Length(bp)
     - molGC
     
-    Each of the cell is normalised before by
-    strip and upper strings methods
+    Each of the cell is normalised before by strip and upper strings methods
 
     Example usage:
+
         from crawlers.millardlab.crawler import MillardLabPhagesCrawler
 
         ml_pc = MillardLabPhagesCrawler(
