@@ -38,9 +38,13 @@ The official documentation is hosted on ReadTheDocs: https://phages2050.readthed
 
 ## Installation
 
-_PHAGES2050_ can be installed by running `pip install phages2050`. It requires Python 3.6.0+ to run.
+_PHAGES2050_ can be installed by running:
 
-You can also use Conda:
+```
+pip install phages2050
+```
+
+It requires Python 3.6.0+ to run. You can also use Conda:
 
 ```
 conda install -c conda-forge phages2050
@@ -50,7 +54,17 @@ conda install -c conda-forge phages2050
 
 If you can't wait for the latest hotness and want to install from GitHub, use:
 
-`pip install git+git://github.com/ptynecki/PHAGES2050`
+```
+pip install git+git://github.com/ptynecki/PHAGES2050
+```
+
+#### Proteins' embedding
+
+If you want to use Bacteriophage proteins vectorizers then remember to install extra package for proteins embedding:
+
+```
+pip install -U "bio-embeddings[all] @ git+https://github.com/sacdallago/bio_embeddings.git"
+```
 
 ## Community and Contributions
 

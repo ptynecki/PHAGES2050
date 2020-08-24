@@ -17,7 +17,7 @@ dependencies = (CURRENT_DIR / "requirements.txt").read_text()
 dependencies = list(map(str.strip, filter(None, dependencies.split('\n'))))
 
 
-version = "0.0.2"
+version = "0.0.4"
 
 setup(
     name="phages2050",
@@ -36,13 +36,14 @@ setup(
     ],
     install_requires=dependencies,
     packages=[
-        "crawlers",
-        "crawlers.ncbi",
-        "crawlers.millardlab",
-        "features",
-        "features.extractors",
-        "embeddings",
-        "embeddings.proteins",
+        "phages2050",
+        "phages2050.crawlers",
+        "phages2050.crawlers.ncbi",
+        "phages2050.crawlers.millardlab",
+        "phages2050.features",
+        "phages2050.features.extractors",
+        "phages2050.embeddings",
+        "phages2050.embeddings.proteins",
     ],
     data_files=glob('examples/*/**'),
     include_package_data=True,
