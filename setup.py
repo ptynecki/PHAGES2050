@@ -1,44 +1,64 @@
-from distutils.core import setup
+from setuptools import setup
+from glob import glob
+from pathlib import Path
 
 
-long_description = (
+CURRENT_DIR = Path(__file__).parent
+
+long_description = (CURRENT_DIR / "README.md").read_text(encoding="utf8")
+
+description = (
     "PHAGES2050 is a novel Python 3.6+ programming language framework"
-    " to boost bacteriophage research & therapy and infrastructure in"
-    " order to achieve the full potential to fight against antimicrobial"
-    " resistant bacteria within **Natural Language Processing (NLP)** and **Deep Learning**."
+    " to boost bacteriophage research & therapy"
 )
 
+# Read requirements and process as list of strings
+dependencies = (CURRENT_DIR / "requirements.txt").read_text()
+dependencies = list(map(str.strip, filter(None, dependencies.split('\n'))))
 
-with open("requirements.txt") as requirements:
-    # Read requirements and process as list of strings
-    packages = list(map(str.strip, requirements.readlines()))
-    version = '0.3.0'
 
-    setup(
-        name="phages2050",
-        version=version,
-        license="MIT",
-        description=long_description,
-        long_description=long_description,
-        long_description_content_type="text/markdown",
-        author="Piotr Tynecki",
-        author_email="p.tynecki@doktoranci.pb.edu.pl",
-        url="https://github.com/ptynecki/PHAGES2050",
-        download_url=f"https://github.com/ptynecki/PHAGES2050/archive/v{version}.tar.gz",
-        install_requires=packages,
-        keywords=[
-            "bacteriophages",
-            "phages",
-            "phage therapy",
-            "phage research",
-            "amr",
-            "genome embedding",
-            "protein embedding",
-        ],
-        classifiers=[
-            "Development Status :: 3 - Alpha",
-            "License :: OSI Approved :: MIT License",
-            "Programming Language :: Python :: 3.6",
-        ],
-        python_requires=">=3.6",
-    )
+version = "0.0.2"
+
+setup(
+    name="phages2050",
+    version=version,
+    license="MIT",
+    description=description,
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author="Piotr Tynecki",
+    author_email="p.tynecki@doktoranci.pb.edu.pl",
+    url="https://github.com/ptynecki/PHAGES2050",
+    download_url=f"https://github.com/ptynecki/PHAGES2050/archive/v{version}.tar.gz",
+    setup_requires=[
+        'setuptools>=49.6.0',
+        'wheel>=0.35.1'
+    ],
+    install_requires=dependencies,
+    packages=[
+        "crawlers",
+        "crawlers.ncbi",
+        "crawlers.millardlab",
+        "features",
+        "features.extractors",
+        "embeddings",
+        "embeddings.proteins",
+    ],
+    data_files=glob('examples/*/**'),
+    include_package_data=True,
+    keywords=[
+        "bacteriophages",
+        "phages",
+        "phage therapy",
+        "phage research",
+        "amr",
+        "genome embedding",
+        "protein embedding",
+    ],
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.6",
+    ],
+    python_requires=">=3.6",
+)
