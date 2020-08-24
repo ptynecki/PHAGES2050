@@ -1,6 +1,7 @@
 include requirements.txt
 include LICENSE
 include CHANGELOG.md
+include CODE_OF_CONDUCT.md
 include README.md
 include setup.py
 recursive-include examples .ipynb

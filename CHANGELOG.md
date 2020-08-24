@@ -3,8 +3,11 @@ All notable changes to this project will be documented in this file.
 
 
 ## [0.0.4] - 24.08.2020
+### Added
+* Examples in Jupyter Notebook format;
 ### Changed
 * Improved `setup.py` script and dependencies;
+* Updated `README.md`;
 
 
 ## [0.0.3] - 24.08.2020

@@ -16,21 +16,49 @@ Watch the [PHAVES #3](https://www.youtube.com/watch?v=gh_Q135t9ps) talk to learn
 [![PyPI license](https://img.shields.io/pypi/l/phages2050.svg)](https://pypi.python.org/pypi/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/phages2050.svg)](https://pypi.python.org/pypi/phages2050/)
 [![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Downloads](https://pepy.tech/badge/phages2050)](https://pepy.tech/project/phages2050)
 
 ## Table of Contents
 
-[Framework modules](https://github.com/ptynecki/PHAGES2050#framework-modules) | [Usage](https://github.com/ptynecki/PHAGES2050#usage) | [Expected Results](https://github.com/ptynecki/PHAGES2050#expected-results) | [Documentation](https://github.com/ptynecki/PHAGES2050#documentation) | [Installation](https://github.com/ptynecki/PHAGES2050#installation) | [Community and Contributions](https://github.com/ptynecki/PHAGES2050#community-and-contributions) | [Have a question?](https://github.com/ptynecki/PHAGES2050#have-a-question) | [Found a bug?](https://github.com/ptynecki/PHAGES2050#found-a-bug) | [Team](https://github.com/ptynecki/PHAGES2050#team) | [Change log](https://github.com/ptynecki/PHAGES2050#change-log) | [Code of Conduct](https://github.com/ptynecki/PHAGES2050#code-of-conduct) | [License](https://github.com/ptynecki/PHAGES2050#license)
+[Framework modules](https://github.com/ptynecki/PHAGES2050#framework-modules) | [Usage](https://github.com/ptynecki/PHAGES2050#usage) | [Documentation](https://github.com/ptynecki/PHAGES2050#documentation) | [Installation](https://github.com/ptynecki/PHAGES2050#installation) | [Community and Contributions](https://github.com/ptynecki/PHAGES2050#community-and-contributions) | [Have a question?](https://github.com/ptynecki/PHAGES2050#have-a-question) | [Found a bug?](https://github.com/ptynecki/PHAGES2050#found-a-bug) | [Team](https://github.com/ptynecki/PHAGES2050#team) | [Change log](https://github.com/ptynecki/PHAGES2050#change-log) | [Code of Conduct](https://github.com/ptynecki/PHAGES2050#code-of-conduct) | [License](https://github.com/ptynecki/PHAGES2050#license)
 
 ## Framework modules
 
 `crawlers` - set of functions responsible for bacteriophages data scraping from different sources (MillardLab, NCBI)  
 `features` - set of functions responsible for nucleotides and proteins feature extraction for Machine Learning classification and deeper analysis  
 `embeddings` - set of pre-trained Embedding models for nucleotides and proteins vectorization  
-`classifiers` - set of pre-trained Machine Learning models dedicated for bacteriophage research
+`classifiers` - set of pre-trained Machine Learning models dedicated for bacteriophage research  
+`explore` - set of data visualization techniques in 2D or 3D dedicated for deeper bacteriophages exploration
 
 ## Usage
 
-## Expected Results
+The repository includes numerous examples of using the framework in Jupyter Notebook format (*.ipynb). The most expected ones by the community are listed below:
+
+##### Crawlers
+* [MillardLab bacteriophage crawler](https://github.com/ptynecki/PHAGES2050/blob/master/examples/crawlers/MillardLab-bacteriophage-crawler.ipynb)
+* NCBI bacteriophages crawlers (planned):
+  * taxonomy, host and other expected meta-data;
+  * complete genome sequences in FASTA format;
+  * set of genes and proteins in FASTA format;
+
+##### Embeddings
+* [Bacteriophage proteins embedding](https://github.com/ptynecki/PHAGES2050/blob/master/examples/embeddings/Bacteriophage-proteins-embedding.ipynb)
+* Bacteriophage DNA embedding (in progress)
+* Bacteriophage sequence-based biological and biochemical features extraction (planned)
+
+##### Classifiers
+* [Bacteriophage structural protein classifier with 95% of accuracy](https://github.com/ptynecki/PHAGES2050/blob/master/examples/classifiers/Bacteriophage-structural-protein-classifier.ipynb)
+* Bacteriophage lifecycle classifier including chronic infection (planned)
+* Bacteriophage taxonomy classifier (planned)
+* Bacteriophage prophage detector and extractor (planned)
+* Lysis zones multi-level-classification (in progress)
+
+##### Explore
+* Bacteriophages in 3D space based on:
+  * DNA embedding (planned)
+  * proteins embedding (planned)
+  * biological and biochemical features (planned)
+  * custom user features (planned)
 
 ## Documentation
 
@@ -68,6 +96,10 @@ pip install -U "bio-embeddings[all] @ git+https://github.com/sacdallago/bio_embe
 
 ## Community and Contributions
 
+Happy to see you willing to make the PHAGES2050 better. Development on the latest stable version of Python 3+ is preferred. As of this writing it's 3.6. You can use any operating system.
+
+If you're fixing a bug or adding a new feature, add a test with *[pytest](https://github.com/pytest-dev/pytest)* and check the code with *[Black](https://github.com/psf/black/)* and *[mypy](https://github.com/python/mypy)*. Before adding any large feature, first open an issue for us to discuss the idea with the core devs and community.
+
 ## Have a question?
 
 Obviously if you have a private question or want to cooperate with us, you can always reach out to us directly via our [Phage Directory Slack](https://phage.directory/slack) (channel **#PHAGES2050**).
@@ -91,6 +123,8 @@ The log's will become rather long. It moved to its own file.
 See [CHANGELOG.md](https://github.com/ptynecki/PHAGES2050/blob/master/CHANGELOG.md).
 
 ## Code of Conduct
+
+Everyone interacting in the PHAGES2050 project's development, issue trackers and Slack discussion is expected to follow the [Code of Conduct](https://github.com/ptynecki/PHAGES2050/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
