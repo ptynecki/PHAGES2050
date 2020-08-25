@@ -3,6 +3,7 @@ import base64
 from io import BytesIO
 from zipfile import ZipFile
 from typing import List, Dict
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -32,7 +33,8 @@ class BertModelManager:
         if not os.path.exists(model_dir):
             os.mkdir(self.model_dir)
 
-    def _get_headers(self) -> Dict:
+    @staticmethod
+    def _get_headers() -> Dict:
         """
         Return header dict with random User-Agent to support request
         and to avoid being blocked by the server
@@ -43,13 +45,21 @@ class BertModelManager:
 
         return {"User-Agent": ua.random}
 
-    def download_model(self) -> str:
+    def download_model(self) -> Path:
         """
         Download BERT pre-trained model and unzip it into directory
 
         This procedure should be executed once and the result
         loaded by BertEmbedding class instance
         """
+
+        path = Path(self.model_dir) / "bert"
+        # If model directory exists then return it immediately
+        if os.path.exists(path):
+            print("[DEBUG] BERT model exists")
+            return path
+        else:
+            print("[DEBUG] BERT model is downloading now")
 
         headers = self._get_headers()
 
@@ -59,7 +69,7 @@ class BertModelManager:
             with ZipFile(BytesIO(response.content)) as zip_file:
                 zip_file.extractall(self.model_dir)
 
-        return f"{self.model_dir}/bert/"
+        return path
 
 
 class BertEmbedding:
