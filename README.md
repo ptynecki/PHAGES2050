@@ -16,7 +16,7 @@ Watch the [PHAVES #3](https://www.youtube.com/watch?v=gh_Q135t9ps) talk to learn
 [![PyPI license](https://img.shields.io/pypi/l/phages2050.svg)](https://pypi.python.org/pypi/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/phages2050.svg)](https://pypi.python.org/pypi/phages2050/)
 [![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Downloads](https://pepy.tech/badge/phages2050)](https://pepy.tech/project/phages2050)
+[![Downloads](https://static.pepy.tech/badge/phages2050)](https://pepy.tech/project/phages2050)
 
 ## Table of Contents
 
