@@ -3,16 +3,18 @@ python:
   - "3.6"
   - "3.7"
   - "3.8"
+
 before_install:
   - python --version
-  - pip install -U pip
   - pip install -U pytest
   - pip install codecov
-# command to install dependencies
 install:
   - pip install -r requirements.txt
-# command to run tests
+
+env:
+  - CODECOV_TOKEN=4f9eafa3-0ca3-48e4-9841-8fb25ff5d7c6
+
 script:
-  - pytest
+  - pytest --verbose --color=yes phages2050
 after_success:
   - codecov

@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.0.5] - 27.08.2020
+### Added
+* Initial Travis CI integration;
+* Bacteriophage structural protein classifier;
+
+### Changed
+* Updated `README.md`;
+
+
 ## [0.0.4] - 24.08.2020
 ### Added
 * Examples in Jupyter Notebook format;
