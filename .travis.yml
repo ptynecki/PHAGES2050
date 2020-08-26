@@ -8,6 +8,7 @@ before_install:
   - python --version
   - pip install -U pytest
   - pip install codecov
+  - pip install -U "bio-embeddings[all] @ git+https://github.com/sacdallago/bio_embeddings.git"
 install:
   - pip install -r requirements.txt
 
