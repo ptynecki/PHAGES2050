@@ -75,6 +75,8 @@ class MillardLabPhagesCrawler:
         except requests.exceptions.RequestException as e:
             print(f"[DEBUG] Request exception: {e}")
 
+            return ""
+
     def _process_element(self, document, xpath: str) -> map:
         """
         Return iterator with normalised elements
@@ -106,14 +108,10 @@ class MillardLabPhagesCrawler:
             )
 
             # Genome Length(bp)
-            bps = self._process_element(
-                document, "//td[contains(@class, 'column-4')]"
-            )
+            bps = self._process_element(document, "//td[contains(@class, 'column-4')]")
 
             # molGC
-            gcs = self._process_element(
-                document, "//td[contains(@class, 'column-5')]"
-            )
+            gcs = self._process_element(document, "//td[contains(@class, 'column-5')]")
 
             samples = list(zip(acc_numbers, descriptions, taxonomies, bps, gcs))
         except ParserError:

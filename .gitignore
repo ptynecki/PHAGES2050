@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 bert_model/
+bsp_model/
 .pypirc

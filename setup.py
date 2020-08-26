@@ -17,7 +17,7 @@ dependencies = (CURRENT_DIR / "requirements.txt").read_text()
 dependencies = list(map(str.strip, filter(None, dependencies.split('\n'))))
 
 
-version = "0.0.4"
+version = "0.0.5"
 
 setup(
     name="phages2050",
@@ -44,6 +44,8 @@ setup(
         "phages2050.features.extractors",
         "phages2050.embeddings",
         "phages2050.embeddings.proteins",
+        "phages2050.classifiers",
+        "phages2050.classifiers.proteins",
     ],
     data_files=glob('examples/*/**'),
     include_package_data=True,
