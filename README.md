@@ -10,7 +10,7 @@ Our project is about developing a AI-based framework for microbiologists and bio
 
 Watch the [PHAVES #3](https://www.youtube.com/watch?v=gh_Q135t9ps) talk to learn more.
 
-[![Travis CI](https://travis-ci.com/github/ptynecki/PHAGES2050)](https://api.travis-ci.com/ptynecki/PHAGES2050.svg?branch=master)
+[![Travis CI](https://travis-ci.com/ptynecki/PHAGES2050.svg?branch=master)](https://travis-ci.com/github/ptynecki/PHAGES2050)
 [![codecov](https://codecov.io/gh/ptynecki/PHAGES2050/branch/master/graph/badge.svg)](https://codecov.io/gh/ptynecki/PHAGES2050)
 [![Documentation Status](https://readthedocs.org/projects/phages2050/badge/?version=stable)](https://phages2050.readthedocs.io/en/stable/?badge=stable)
 [![PyPI version](https://img.shields.io/pypi/v/phages2050.svg)](https://pypi.org/project/phages2050/)
