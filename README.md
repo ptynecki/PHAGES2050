@@ -112,10 +112,19 @@ Feel free to add a new issue with a respective title and description on the [the
 ## Team
 
 #### Data Science crew
-![](http://tynecki.pl/phages2050-datascience-team-v2.png)
+* Piotr Tynecki
+* Yana Minina
+* Iwona Świętochowska
+* Przemysław Mitura
 
 #### Phage domain expert crew
-![](http://tynecki.pl/phages2050-phage-expert-team-v2.png)
+* Joanna Kazimierczak
+* Arkadiusz Guziński
+* Bogusław Zimnoch
+
+#### Community Managers and Educators crew
+* Jessica Sacher
+* Shawna McCallin
 
 ## Change log
 
