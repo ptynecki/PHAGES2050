@@ -130,4 +130,5 @@ dmypy.json
 
 bert_model/
 bsp_model/
+word2vec_model/
 .pypirc

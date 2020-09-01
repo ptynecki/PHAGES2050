@@ -14,10 +14,10 @@ description = (
 
 # Read requirements and process as list of strings
 dependencies = (CURRENT_DIR / "requirements.txt").read_text()
-dependencies = list(map(str.strip, filter(None, dependencies.split('\n'))))
+dependencies = list(map(str.strip, filter(None, dependencies.split("\n"))))
 
 
-version = "0.0.5"
+version = "0.0.6"
 
 setup(
     name="phages2050",
@@ -30,10 +30,7 @@ setup(
     author_email="p.tynecki@doktoranci.pb.edu.pl",
     url="https://github.com/ptynecki/PHAGES2050",
     download_url=f"https://github.com/ptynecki/PHAGES2050/archive/v{version}.tar.gz",
-    setup_requires=[
-        'setuptools>=49.6.0',
-        'wheel>=0.35.1'
-    ],
+    setup_requires=["setuptools>=49.6.0", "wheel>=0.35.1"],
     install_requires=dependencies,
     packages=[
         "phages2050",
@@ -47,7 +44,7 @@ setup(
         "phages2050.classifiers",
         "phages2050.classifiers.proteins",
     ],
-    data_files=glob('examples/*/**'),
+    data_files=glob("examples/*/**"),
     include_package_data=True,
     keywords=[
         "bacteriophages",
