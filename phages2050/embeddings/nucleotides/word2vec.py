@@ -52,7 +52,7 @@ class Word2VecModelManager:
 
         path = Path(self.model_dir)
         # If model directory exists then return it immediately
-        if os.path.exists(path):
+        if os.path.exists(path) and os.listdir(path):
             print("[DEBUG] Word2Vec model exists")
             return path
         else:
