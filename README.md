@@ -123,8 +123,9 @@ Feel free to add a new issue with a respective title and description on the [the
 * Bogusław Zimnoch
 
 #### Community Managers and Educators crew
-* Jessica Sacher
-* Shawna McCallin
+* Jessica Sacher, PhD
+* Shawna McCallin, PhD
+* Jan Zheng
 
 ## Change log
 
