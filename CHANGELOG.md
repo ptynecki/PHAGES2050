@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.0.6] - 01.09.2020
+### Added
+* [K-mer transformer](https://en.wikipedia.org/wiki/K-mer) with parallelization support;
+* Embedding for bacteriophages nucleotides with new Example in Jupyter Notebook format;
+
+### Changed
+* `requirements.txt` with pandarallel, scikit-learn, gensim and numpy;
+
+
 ## [0.0.5] - 27.08.2020
 ### Added
 * Initial Travis CI integration;

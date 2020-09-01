@@ -44,7 +44,7 @@ The repository includes numerous examples of using the framework in Jupyter Note
 
 ##### Embeddings
 * [Bacteriophage proteins embedding](https://github.com/ptynecki/PHAGES2050/blob/master/examples/embeddings/Bacteriophage-proteins-embedding.ipynb)
-* Bacteriophage DNA embedding (in progress)
+* [Bacteriophage DNA embedding](https://github.com/ptynecki/PHAGES2050/blob/master/examples/embeddings/Bacteriophage-nucleotides-embedding.ipynb)
 * Bacteriophage sequence-based biological and biochemical features extraction (planned)
 
 ##### Classifiers
