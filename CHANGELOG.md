@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.0.7] - 18.09.2020
+### Added
+* new extention for `embedding` module with ESM transformer-based protein embedding model;
+
+### Changed
+* `requirements.txt` updated;
+* Updated `README.md`;
+
+
 ## [0.0.6] - 01.09.2020
 ### Added
 * [K-mer transformer](https://en.wikipedia.org/wiki/K-mer) with parallelization support;

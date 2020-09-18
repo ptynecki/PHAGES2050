@@ -1,11 +1,13 @@
 black==19.10b0
 lxml==4.5.2
-pandas==1.1.1
+pandas==1.1.2
 requests==2.24.0
-biopython==1.77
+biopython==1.78
 fake-useragent==0.1.11
 joblib==0.16.0
 pandarallel==1.5.1
 scikit-learn==0.22.2.post1
 gensim==3.8.3
-numpy==1.19.1
+numpy==1.19.2
+pytest==6.0.2
+coverage==5.3
