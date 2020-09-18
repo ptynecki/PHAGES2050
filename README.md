@@ -93,6 +93,7 @@ If you want to use Bacteriophage proteins vectorizers then remember to install e
 
 ```
 pip install -U "bio-embeddings[all] @ git+https://github.com/sacdallago/bio_embeddings.git"
+pip install git+https://github.com/facebookresearch/esm.git
 ```
 
 ## Community and Contributions
@@ -111,20 +112,18 @@ Feel free to add a new issue with a respective title and description on the [the
 
 ## Team
 
-#### Data Science crew
+Core Developers, Domain Experts, Community Managers and Educators who contributing to PHAGES2050:
+
 * Piotr Tynecki
 * Yana Minina
 * Iwona Świętochowska
 * Przemysław Mitura
-
-#### Phage domain expert crew
 * Joanna Kazimierczak
 * Arkadiusz Guziński
 * Bogusław Zimnoch
-
-#### Community Managers and Educators crew
 * Jessica Sacher, PhD
 * Shawna McCallin, PhD
+* Marie-Agnes Petit, PhD
 * Jan Zheng
 
 ## Change log
