@@ -1,7 +1,5 @@
 language: python
 python:
-  - "3.6"
-  - "3.7"
   - "3.8"
 
 before_install:
@@ -9,6 +7,7 @@ before_install:
   - pip install -U pytest
   - pip install codecov
   - pip install -U "bio-embeddings[all] @ git+https://github.com/sacdallago/bio_embeddings.git"
+  - pip install git+https://github.com/facebookresearch/esm.git
 install:
   - pip install -r requirements.txt
 
@@ -16,6 +15,6 @@ env:
   - CODECOV_TOKEN=4f9eafa3-0ca3-48e4-9841-8fb25ff5d7c6
 
 script:
-  - pytest --verbose --color=yes phages2050
+  - pytest --verbose --color=yes phages2050/features
 after_success:
   - codecov

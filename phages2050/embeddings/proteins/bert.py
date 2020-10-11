@@ -10,7 +10,7 @@ import requests
 
 from fake_useragent import UserAgent
 
-from bio_embeddings.embed.bert_embedder import BertEmbedder
+from bio_embeddings.embed.prottrans_bert_bfd_embedder import ProtTransBertBFDEmbedder
 
 import torch
 
@@ -96,7 +96,7 @@ class BertEmbedding:
         if not os.path.exists(self.model_dir):
             raise Exception("BERT model wasn't downloaded yet")
 
-        self.embedder = BertEmbedder(model_directory=self.model_dir)
+        self.embedder = ProtTransBertBFDEmbedder(model_directory=self.model_dir)
 
         self.cuda_device = cuda_device
         # Select GPU card (if you have more than one)
