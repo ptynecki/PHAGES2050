@@ -8,7 +8,7 @@ CURRENT_DIR = Path(__file__).parent
 long_description = (CURRENT_DIR / "README.md").read_text(encoding="utf8")
 
 description = (
-    "PHAGES2050 is a novel Python 3.6+ programming language framework"
+    "PHAGES2050 is a novel Python 3.8+ programming language framework"
     " to boost bacteriophage research & therapy"
 )
 
@@ -17,7 +17,7 @@ dependencies = (CURRENT_DIR / "requirements.txt").read_text()
 dependencies = list(map(str.strip, filter(None, dependencies.split("\n"))))
 
 
-version = "0.0.7"
+version = "0.0.8"
 
 setup(
     name="phages2050",
@@ -30,7 +30,7 @@ setup(
     author_email="p.tynecki@doktoranci.pb.edu.pl",
     url="https://github.com/ptynecki/PHAGES2050",
     download_url=f"https://github.com/ptynecki/PHAGES2050/archive/v{version}.tar.gz",
-    setup_requires=["setuptools>=49.6.0", "wheel>=0.35.1"],
+    setup_requires=["setuptools>=50.3.0", "wheel>=0.35.1"],
     install_requires=dependencies,
     packages=[
         "phages2050",
@@ -61,7 +61,7 @@ setup(
     classifiers=[
         "Development Status :: 3 - Alpha",
         "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.8",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.8",
 )

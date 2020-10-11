@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.0.8] - 11.10.2020
+### Added
+* Initial online documentation;
+
+### Changed
+* Migrated the codebase to Python 3.8+; 
+
+
 ## [0.0.7] - 18.09.2020
 ### Added
 * new extention for `embedding` module with ESM transformer-based protein embedding model;
