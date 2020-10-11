@@ -4,7 +4,7 @@
 
 > "Keep calm, use AI for phages and stop AMR"
 
-PHAGES2050 is a novel [Python 3.6+ programming language](https://python.org) framework to boost bacteriophage research & therapy and infrastructure in order to achieve the full potential to fight against antimicrobial resistant bacteria within **Natural Language Processing (NLP)** and **Deep Learning**.
+PHAGES2050 is a novel [Python 3.8+ programming language](https://python.org) framework to boost bacteriophage research & therapy and infrastructure in order to achieve the full potential to fight against antimicrobial resistant bacteria within **Natural Language Processing (NLP)** and **Deep Learning**.
 
 Our project is about developing a AI-based framework for microbiologists and bioinformaticians who hunt, explore and classify phages. Applying the framework will shorten the duration of computational methods required to match phages with bacteria for specific patient cases. Having such organised framework at hand and freely-available will help develop personalized phage therapy and make it accessible to people worldwide.
 
@@ -73,7 +73,7 @@ _PHAGES2050_ can be installed by running:
 pip install phages2050
 ```
 
-It requires Python 3.6.0+ to run. You can also use Conda:
+It requires Python 3.8.0+ to run. You can also use Conda:
 
 ```
 conda install -c conda-forge phages2050
@@ -98,7 +98,7 @@ pip install git+https://github.com/facebookresearch/esm.git
 
 ## Community and Contributions
 
-Happy to see you willing to make the PHAGES2050 better. Development on the latest stable version of Python 3+ is preferred. As of this writing it's 3.6. You can use any operating system.
+Happy to see you willing to make the PHAGES2050 better. Development on the latest stable version of Python 3+ is preferred. As of this writing it's 3.8. You can use any operating system.
 
 If you're fixing a bug or adding a new feature, add a test with *[pytest](https://github.com/pytest-dev/pytest)* and check the code with *[Black](https://github.com/psf/black/)* and *[mypy](https://github.com/python/mypy)*. Before adding any large feature, first open an issue for us to discuss the idea with the core devs and community.
 
