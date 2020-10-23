@@ -22,7 +22,7 @@ copyright = '2020, Piotr Tynecki, Iwona Świętochowska, Yana Minina, Przemysła
 author = 'Piotr Tynecki, Iwona Świętochowska, Yana Minina, Przemysław Mitura, Wojciech Łaguna'
 
 # The full version, including alpha/beta/rc tags
-release = version = '0.0.8'
+release = version = '0.0.9'
 
 
 # -- General configuration ---------------------------------------------------

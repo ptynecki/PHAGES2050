@@ -20,12 +20,13 @@ pandarallel.initialize()
 
 class KMersTransformer(BaseEstimator, TransformerMixin):
     """
-    K-mer transformer is responsible to extract set of
-    words which are subsequences of length (6 by default)
-    contained within a biological sequence
+    K-mer transformer is responsible to extract set of words -
+    using configurable sliding window - which are subsequences
+    of length (6 by default) contained within a biological sequence
 
-    Each of the word is called k-mer and are composed of
-    nucleotides (i.e. A, T, G, and C)
+    Each of the word is called k-mer and are composed of nucleotides
+    (i.e. A, T, G, and C). Each word which includes other characters
+    is removed from the output
 
     Example:
         fname = 'NC_001604.fasta'
@@ -37,9 +38,10 @@ class KMersTransformer(BaseEstimator, TransformerMixin):
         kmt.transform(sample)
     """
 
-    def __init__(self, size: int = 6):
+    def __init__(self, size: int = 6, sliding_window: int = 1):
         self.accepted_chars: Set[str] = {"A", "C", "T", "G"}
         self.size: int = size
+        self.sliding_window: int = sliding_window
 
     def _extract_kmers_from_sequence(self, sequence: str) -> str:
         """
@@ -57,7 +59,7 @@ class KMersTransformer(BaseEstimator, TransformerMixin):
         return " ".join(
             [
                 sequence[x : x + self.size]
-                for x in range(len(sequence) - self.size + 1)
+                for x in range(0, len(sequence) - self.size + 1, self.sliding_window)
                 if not set(sequence[x : x + self.size]) - self.accepted_chars
             ]
         )
