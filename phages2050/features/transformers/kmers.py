@@ -59,9 +59,9 @@ class KMersTransformer(BaseEstimator, TransformerMixin):
 
         kmers = " ".join(
             [
-                sequence[x: x + self.size]
+                sequence[x : x + self.size]
                 for x in range(0, seq_length - self.size + 1, self.sliding_window)
-                if not set(sequence[x: x + self.size]) - self.accepted_chars
+                if not set(sequence[x : x + self.size]) - self.accepted_chars
             ]
         )
 
@@ -69,7 +69,7 @@ class KMersTransformer(BaseEstimator, TransformerMixin):
         # then the last k-mer need to be added
         if self.sliding_window > 1 and seq_length % self.sliding_window != 0:
             # Last k-mer
-            kmers += f' {sequence[-self.size:]}'
+            kmers += f" {sequence[-self.size:]}"
 
         return kmers
 
