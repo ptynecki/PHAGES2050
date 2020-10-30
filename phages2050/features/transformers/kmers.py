@@ -11,7 +11,6 @@ from gensim.models.fasttext import FastText
 
 from pandarallel import pandarallel
 
-
 # Parallelization has a cost, so parallelization is efficient only
 # if the amount of calculation to parallelize is high enough.
 # For very little amount of data, using parallelization is not always worth it.
@@ -34,7 +33,7 @@ class KMersTransformer(BaseEstimator, TransformerMixin):
 
         sample = fr.to_df()
 
-        kmt = KMersTransformer()
+        kmt = KMersTransformer(size=6, sliding_window=1)
         kmt.transform(sample)
     """
 
@@ -56,13 +55,23 @@ class KMersTransformer(BaseEstimator, TransformerMixin):
         what is expected as input for embedding
         """
 
-        return " ".join(
+        seq_length = len(sequence)
+
+        kmers = " ".join(
             [
-                sequence[x : x + self.size]
-                for x in range(0, len(sequence) - self.size + 1, self.sliding_window)
-                if not set(sequence[x : x + self.size]) - self.accepted_chars
+                sequence[x: x + self.size]
+                for x in range(0, seq_length - self.size + 1, self.sliding_window)
+                if not set(sequence[x: x + self.size]) - self.accepted_chars
             ]
         )
+
+        # If sequence length is not div by sliding window value
+        # then the last k-mer need to be added
+        if self.sliding_window > 1 and seq_length % self.sliding_window != 0:
+            # Last k-mer
+            kmers += f' {sequence[-self.size:]}'
+
+        return kmers
 
     def transform(self, df: pd.DataFrame) -> Series:
         """
