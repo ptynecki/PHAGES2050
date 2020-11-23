@@ -133,7 +133,7 @@ class ESMEmbedding:
                     result = {
                         "label": label,
                         "mean_representations": {
-                            layer: t[i, 1: len(strs[i]) + 1].mean(0)
+                            layer: t[i, 1 : len(strs[i]) + 1].mean(0)
                             for layer, t in representations.items()
                         },
                     }
