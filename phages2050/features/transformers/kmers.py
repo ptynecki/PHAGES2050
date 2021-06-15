@@ -117,7 +117,7 @@ class GenomeAvgTransformer(TransformerMixin, BaseEstimator):
             # Return average fixed-length numeric vector
             # including all the k-mers in the sequence
             feature_vector: np.array = np.mean(
-                self.gensim_model[supported_words], axis=0, dtype="float64"
+                [self.gensim_model.wv.get_vector(word) for word in supported_words], axis=0, dtype="float64"
             )
         else:
             # Return fixed-length numeric vector with zeros
@@ -135,7 +135,7 @@ class GenomeAvgTransformer(TransformerMixin, BaseEstimator):
         """
 
         # Unique set of words
-        vocabulary: set = set(self.gensim_model.wv.index2word)
+        vocabulary: set = set(self.gensim_model.wv.index_to_key)
 
         features: list = [
             self.average_word_vectors(

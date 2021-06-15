@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.0.10] - 15.06.2021
+### Changed
+* Removed bug (depreciation) from `GenomeAvgTransformer` class;
+* `requirements.txt` updated including gensim, joblib and scikit-learn updated versions;
+
+
 ## [0.0.9] - 30.10.2020
 ### Added
 * Added `NCBIProteinExtractor` to support protein sequences crawler from NCBI;
