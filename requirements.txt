@@ -1,7 +1,7 @@
 black==19.10b0
 lxml==4.5.2
 pandas==1.1.3
-requests==2.24.0
+requests==2.31.0
 biopython==1.78
 fake-useragent==0.1.11
 joblib==0.17.0
